@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial;
+    background-color:rgb(20, 25, 45);
+    color: #fff;
+}
+/* Start navigation */
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(77, 124, 138);
+    display:flex;
+    justify-content: center;
+}
+nav ul{
+    width: 500px;
+    height: 50px;
+    /* background-color: brown; */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    
+}
+nav ul li a{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    /* background-color: rgb(15, 12, 234); */
+    text-decoration: none;
+    
+}
+nav ul li a:hover{
+    background-color: rgb(242, 187, 5);
+    cursor: pointer;
+}
+/* end navigation */
+/* start home */
+#home{
+    margin-top: 100px;
+    height: 30vh;
+}
+#home h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight:bold;
+    
+    
+}
+#home p{
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+#home .homebtn{
+    text-align: center;
+}
+
+#home .homebtn a{
+
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    padding: 20px 25px;
+    background-color: rgb(242, 187, 5);
+    border-radius: 5px;
+}
+
+#home .homebtn a:hover{
+    background-color: rgb(245, 204, 70);
+}
+/* End Home */
+/* Start profile section */
+
+#profile{
+    width: 100%;
+    height: 300px;
+    /* background-color: rgb(5, 132, 201); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 3rem;
+}
+#profile h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#profile .about{
+    width:70%;
+    height: 200px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#profile .about .aboutimg{
+    width: 150px;
+    height: 150px;
+    /* background-color: purple; */
+    border-radius: 50%;
+    /* overflow: hidden; */
+    border: 5px solid  rgb(245, 204, 70);
+}
+
+#profile .about .aboutimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#profile .about .aboutcontent{
+    width: 600px;
+    height: 150px;
+    /* background-color: rgb(142, 12, 111); */
+    text-align: center;
+}
+#profile .about .aboutcontent p{
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2.2rem;
+}
+/* start skill */
+#skill h2{
+    text-align: center;
+}
+#skill{
+    width: 100%;
+    height:800px;
+    /* background-color: rgb(0, 255, 64); */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#skill h2{
+    font-size: 2.5rem;
+}
+#skill .skillcontainer{
+    width:75%;
+    height:300px;
+    /* background-color: rgb(253, 28, 28); */
+    display: flex;
+    justify-content: space-around;
+}
+
+#skill .skillcontainer div{
+    width:500px;
+    height:300px;
+    background-color: rgb(242, 187, 5);
+}
+#skill .skillcontainer div:hover{
+    box-shadow: 0px 5px 10px  rgb(245, 204, 70) ;
+}
+#skill .skillcontainer div h3{
+    text-align: center;
+    font-size: 2rem;
+    margin: 25px 0 10px 0;
+}
+#skill .skillcontainer div ul{
+    padding-left: 30px;
+}
+#skill .skillcontainer div ul li{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    
+}
+/* End skill */
+/* start contact */
+#contact{
+    width: 100%;
+    height: 300px;
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#contact .contacttext{
+    width: 400px;
+    height: 200px;
+    /* background-color: bisque; */
+    padding-top: 20px;
+    
+}
+#contact .contacttext table tr td:hover{
+    color:  rgb(245, 204, 70);
+    cursor: pointer;
+}
+#contact .contactmap{
+    width: 400px;
+    height:200px;
+    /* background-color: rgb(247, 191, 247); */
+}
+#contact .contactmap iframe{
+width: 100%;
+height: 100%;
+}
+/* End contact */
+/* Start footer */
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+}
+footer p{
+    text-align: center;
+    line-height: 30px;
+}
+    @media (max-width: 768px){
+    #profile{
+        height: 500px;
+        margin-top: 0px;
+    }
+
+    #profile .about{
+        flex-direction: column;
+    }  
+    #profile .about .aboutcontent{
+        padding: 0 60px;
+    }
+    
+    #profile .about .aboutcontent p{
+        font-size: 1rem;
+    
+    }
+    #skill{
+        height: 1500px;
+    }
+    #skill .skillcontainer{
+        height: 700px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #skill .skillcontainer div{
+        margin-top: 20px;
+    }
+    #contact{
+        height: 500px;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
